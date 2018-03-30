@@ -6,15 +6,12 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 		plugin= {"pretty","html:target/cucumber", "json:target/cucumber.json"},
 
-		features= {"src/main/resources/AgileTrailblazersEmailValidation.feature"},
-		glue= {"com.usa.disneyworld"},
+		features= {"src/main/resources/Test.feature"},
+		
+		glue= {"com.usa.stefdefination"},
 				
 		tags= {"@login"}
 		)
-
-
-public class TestNgRunner extends AbstractTestNGCucumberTests{
-
-}
+        public class TestNgRunner extends AbstractTestNGCucumberTests{}
 
 

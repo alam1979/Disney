@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.usa.stefdefination.Disneyworld_Class">
+      <class name="com.usa.stefdefination.StefDefination">
         <methods>
-          <include name="Test"/>
+          <include name="user_able_to_picks_a_date"/>
+          <include name="user_picks_two_adults"/>
+          <include name="user_visit_on_homepage"/>
         </methods>
-      </class> <!-- com.usa.stefdefination.Disneyworld_Class -->
+      </class> <!-- com.usa.stefdefination.StefDefination -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
