@@ -12,12 +12,16 @@ import cucumber.api.java.en.When;
      
     @Listeners(com.usa.util.ListenerTest.class) 
     public class StefDefination {
-    WebDriver driver;
+    	
+    	WebDriver driver;
 	
     @Given("^User visit on homepage$")
 	public void user_visit_on_homepage() throws Throwable {
+    	
 	    driver = browserFactory.getBrowser("chrome", driver);
+	    
 		driver.get(browserFactory.getURL());
+		
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
@@ -25,6 +29,7 @@ import cucumber.api.java.en.When;
     @When("^User able to picks a dates$")
 	public void user_able_to_picks_a_date() throws Throwable {
 		PageObjectClass obj = new PageObjectClass(driver);
+		
 		obj.SelectDateButton().click();
 		obj.SelectFirstDate().click();
 		Thread.sleep(2000);

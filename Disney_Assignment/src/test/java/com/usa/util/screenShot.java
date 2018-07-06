@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 public class screenShot {
 
 	    public static String captureScreenShot(WebDriver driver, String ScreenShotName) throws Exception{
-	   TakesScreenshot ts =(TakesScreenshot)driver;
+	    TakesScreenshot ts =(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 		DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");

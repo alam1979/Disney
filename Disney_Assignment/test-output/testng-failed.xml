@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.usa.stefdefination.StefDefination">
+      <class name="com.usa.testngrunner.TestNgRunner">
         <methods>
-          <include name="user_able_to_picks_a_date"/>
-          <include name="user_picks_two_adults"/>
-          <include name="user_visit_on_homepage"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.usa.stefdefination.StefDefination -->
+      </class> <!-- com.usa.testngrunner.TestNgRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

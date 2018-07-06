@@ -12,11 +12,16 @@ import com.usa.util.screenShot;
 
 
     public class PageObjectClass  {
+    	
     WebDriver driver;
-    public PageObjectClass(WebDriver driver) {
+    
+    public PageObjectClass(WebDriver driver) 
+    {
     this.driver = driver;
     PageFactory.initElements(driver,this);
 	}
+    
+    
     @FindBy(how = How.XPATH, using = ".//*[@id='checkInDate_display']")
     @CacheLookup
     WebElement SelectDateButton;
@@ -113,6 +118,8 @@ import com.usa.util.screenShot;
     break; }}
 	return FindThirdResort;
     }
+    
+    
     WebElement FindunavailableRoom;
     public WebElement FindunavailableRoom() throws Exception {
     Thread.sleep(2500);

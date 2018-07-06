@@ -4,7 +4,7 @@ Feature: User want to visit DisneyWorld
                                  Description: 
         "User Want to booking Hotel, Park Ticket, Transportation and Dining Planing"
 
-  Scenario: User want to booking DisneyWorld ticket and hotel 
+Scenario: User want to booking DisneyWorld ticket and hotel 
 
 
 Given User visit on homepage

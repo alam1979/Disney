@@ -3,12 +3,12 @@ package com.usa.testngrunner;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(
+       @CucumberOptions(
 		plugin= {"pretty","html:target/cucumber", "json:target/cucumber.json"},
 
-		features= {"src/main/resources/Test.feature"},
+		features = {"src/main/resources/Test.feature"},
 		
-		glue= {"com.usa.stefdefination"},
+		glue = {"com.usa.stefdefination"},
 				
 		tags= {"@login"}
 		)

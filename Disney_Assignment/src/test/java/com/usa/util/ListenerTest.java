@@ -31,6 +31,4 @@ public class ListenerTest implements ITestListener {
 	// When Test case get passed, this method is called.
 	public void onTestSuccess(ITestResult Result) {
 	System.out.println("The name of the testcase passed is :" + Result.getName());
-	}
-
-}
+	}}
